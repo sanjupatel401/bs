@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+    scroll-behavior: smooth;
+    scroll-padding-top:6.5rem;
+}
+
+body{
+    background-color: rgb(6, 6, 83);
+    overflow-x: hidden;
+}
+
+.btn{
+    display: inline-block;
+    padding: .6rem .3rem;
+    border: 1px solid  rgb(10, 10, 65);
+    background-color: transparent;
+    margin-top: 1rem;
+    color: rgb(11, 11, 56);
+    font-size: 2rem;
+
+}
+
+.whatsapp{
+    padding: 1.3rem 2%;
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    background-color: #25D366;
+    border-radius: 2rem;
+
+}
+.whatsapp a{
+    font-size: 2rem;
+    color: #fff;
+    
+}
+
+
+.btn:hover{
+    border: #ee0548 2px solid;
+    color: #fff;
+    background-color: #ee0548;
+}
+
+
+.heading{
+    text-align: center;
+    color: #fff;
+    min-height: 3rem;
+    padding: .7rem;
+   
+
+}
+
+.heading h1{
+    font-size: 5rem;
+
+
+}
+.heading img{
+    margin-bottom: 2rem;
+    height: 5rem;
+    width: 40rem;
+    object-fit: cover;
+
+
+
+}
+
+
+header{
+    width: 100vw;
+    height: 7rem;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 1000;
+    background-color:#ee0548;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    /* padding: 2rem 9%; */
+}
+
+
+
+
+header .logo  img{
+    width:30%;
+    height:15%;
+   
+}
+
+
+header .navbar a{
+    font-size: 1.6rem;
+    margin-left:2rem;
+    color: #fff;
+}
+header .navbar a:hover{
+    
+    color: #130f40;
+}
+
+header  .contact-btn{
+
+    color: rgb(245, 230, 19) !important;
+    text-transform: uppercase;
+    
+}
+
+#menubar{
+    font-size: 2rem;
+    padding: .5rem;
+    color: #fff;
+    border-radius: 10%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    min-height: 100vh;
+    background: url(images/frist\ section\ bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+
+
+.home .content h1{
+    font-size: 4rem;
+    color: #ee0548;
+    
+    
+    
+
+}
+.home .content span{
+    font-size: 4rem;
+    font-weight:blod;
+   
+    
+
+}
+
+
+.gallary{
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.gallary .box-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 4%;
+}
+
+
+.gallary .box{
+    width: 30rem;
+    height:25rem;
+    margin:1.2rem ;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem .9rem #fff;
+   
+  
+    
+}
+
+.gallary .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    
+}
+
+
+.gallary .box:hover img{
+    transform: scale(1.3);
+}
+
+
+
+.clints{
+    min-height: 100vh;
+    padding: 3rem 9%;
+   
+   
+}
+
+.clints .row{
+    display: flex;
+   
+}
+
+.divider{
+    width: 23rem;
+}
+
+.clints .row .box-container .box{
+    width: 40rem;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 1rem;
+    
+
+}
+
+.clints .row .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clints .row .box-container h3{
+    font-size: 2.3rem;
+    color: #ee0548;
+    padding: 1rem;
+
+}
+.clints .row .box-container p{
+    font-size: 1.3rem;
+    color: #fff;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+    
+
+}
+
+.team{
+    padding: 1rem;
+}
+
+  
+
+.team .teambox{
+    width: 100%;
+    padding: 2rem 9%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 30rem;
+   
+}
+
+.team .teambox .worker{
+    width:30rem;
+    padding:4rem 3%;
+    background: #fff;
+    border-radius: .3rem;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:2rem;
+    box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.9)
+
+
+}
+
+.team .teambox .worker .box {
+    width: 100%;
+    height: 100%;
+    margin: .5rem;
+
+}
+
+.team .teambox .worker .box img{
+    width: 90%;
+    height: 90%;
+    object-fit:cover ;
+    border-radius: 50%;
+
+}
+
+.team .teambox .worker .intro{
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.team .teambox .worker .intro h3{
+    font-size: 3rem;
+}
+.team .teambox .worker .intro p{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: #ee0548;
+
+}
+
+
+.team .teambox .worker .share{
+    padding: 1rem 0;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.team .teambox .worker .share a{
+    margin-right:.3rem;
+    padding: 1rem;
+    color: #130f40;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: 1px solid #130f40;
+}
+
+.team .teambox .worker .share a:hover{
+    border: 1px solid #ee0548;
+    background-color: #ee0548;
+    color: #fff;
+}
+
+.contact{
+    padding: 3rem;
+    min-height: 80vh;
+    
+ 
+}
+
+.contact form{
+    width:100% ;
+   
+    
+    
+    
+}
+.contact form .formbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+
+}
+
+.contact form .formbox input{
+    width: 49%;
+    height: 4rem;
+    padding: .8rem;
+    font-size: 2rem;
+    
+    outline: none;
+    border-radius:1rem;
+    
+}
+
+.contact form .formbox input:focus{
+    border: #ee0548 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.contact form .formbox input::placeholder{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.contact  textarea{
+    width: 100%;
+    resize: none;
+    padding: .8rem;
+    font-size: 2rem;
+}
+
+.contact  textarea::placeholder{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+.contact  textarea:focus{
+    border: #ee0548 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.3);
+}
+.contact button{
+    margin:1rem auto;
+    display: block;
+    padding: .8rem 4rem;
+    color: #fff;
+    border: #fff 2px solid;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.thanking{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.thanking .emojy{
+    padding: 1rem;
+    font-size: 12rem;
+    color: yellow;
+}
+
+.thanking h3{
+    font-size: 3rem;
+}
+.thanking h3 span{
+    color: #e91652;
+    font-size: 3rem;
+    
+}
+.thanking h1{
+    font-size: 6rem;
+}
+.thanking .button{  display: inline-block;
+    padding: .6rem .3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    background: #e91652;
+    color: #fff;
+    border: none;
+    animation: orderbtn .5s infinite;
+}
+.thanking .button:hover{
+   border: none;
+   cursor: pointer;
+}
+
+@keyframes orderbtn {
+    0%{
+        transform: translateX(-10%);
+    }
+    25%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(10%);
+    }
+    75%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+/* -----------------------------------------footer-------------------------------------------------------- */
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+footer span{
+    color: #e91652;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width:768px){
+
+    #menubar{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background-color: #130f40;
+        padding: 2rem 4%;
+        display: none;
+    }
+   
+    header .navbar a{
+        display: block;
+        background-color: #fff;
+        color:#130f40;
+        margin: 1rem 0;
+        padding: 2rem;
+        border-radius: 1rem;
+        font-size: 2.5rem;
+
+    }
+
+    .home{
+        justify-content: center;
+        background-position: left;
+        text-align: center;
+
+    }
+
+    .home span{
+        font-size: 5rem;
+    }
+    .home h1{
+        font-size: 6rem;
+    }
+    .home .btn{
+        
+        padding: 1rem 2rem;
+    }
+
+    .gallary .box-container{
+        justify-content: center;
+        padding: 1rem 2%;
+    }
+    .gallary .box-container .box{
+        width:60rem;
+        
+    }
+
+    .clints{
+        padding: .4rem;
+    }
+    
+
+
+    .clints .row{
+        flex-wrap: wrap;
+        align-items: center;
+        
+        
+    }
+
+    
+    .clints .row .box-container{
+        margin: auto;
+    }
+    .clints .row .box-container .box{
+        width: 55rem;
+        padding: .8rem;
+        margin: .5rem;
+    }
+    .divider{
+        display: none;
+    }
+    .clints .row .box-container h3{
+        font-size: 1.6rem;
+        
+    }
+    .clints .row .box-container p{
+        width: 60rem;
+        
+    }
+
+    .contact textarea{
+        width: 100%;
+        margin-bottom: 1rem;
+         padding: .8rem;
+         font-size: 1.5rem;
+
+    }
+
+    .contact textarea::placeholder{
+        padding: .8rem;
+        font-size: 1.5rem;
+    
+    }
+    .contact form .formbox {
+       padding: 0;
+    }
+    
+    .contact form .formbox input{
+        width: 100%;
+       margin-bottom: 1rem;
+        padding: .8rem;
+        font-size: 1.5rem;
+      
+    }
+    .contact form .formbox input::placeholder{
+        padding: .8rem;
+        font-size: 1.5rem;
+    
+    }
+    .thanking{
+        min-height:60vh;
+    }
+    .thanking h3{
+        font-size: 1.5rem;
+    }
+    .thanking h3 span{
+        color: #e91652;
+        font-size: 1.5rem;
+        
+    }
+    .thanking h1{
+        font-size: 3rem;
+    }
+
+    .thanking .emojy{
+        padding: .4rem;
+        font-size: 7rem;
+        color: yellow;
+    }
+
+    footer{
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:rgba(0, 0, 0, 0.6);
+        color: #fff;
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+
+    .whatsapp{
+        padding: .7rem ;
+    }
+    .whatsapp span {
+        display: none;
+    }
+
+    
+
+}
+
+@media (max-width:485px){
+    html{
+        font-size: 50%;
+    }
+    .clints{
+        padding: .4rem;
+    }
+    .clints .row .box-container{
+        align-items: center;
+    }
+
+    .clints .row .box-container .box{
+        width: 45rem;
+        padding: .5rem;
+        margin: .3rem;
+    }
+    .divider{
+        display: none;
+    }
+    .clints .row .box-container h3{
+        font-size: 2rem;
+        
+    }
+    .clints .row .box-container p{
+        width: 40rem;
+        
+    }
+}
