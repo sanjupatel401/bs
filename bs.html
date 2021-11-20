@@ -282,6 +282,18 @@
 
         window.onscroll = () => {
             menu.classList.remove('fa-times')
+            var x = window.matchMedia("(max-width: 485px)")
+            if (x.matches) {
+                navbar.style.display = 'none'
+              } else {
+                navbar.style.display = 'block'
+              }
+            var y = window.matchMedia("(max-width: 768px)")
+            if (y.matches) {
+                navbar.style.display = 'none'
+              } else {
+                navbar.style.display = 'block'
+              }
             
         }
 
